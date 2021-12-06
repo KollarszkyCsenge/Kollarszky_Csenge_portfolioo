@@ -1,0 +1,534 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.gomb {
+  background-color: #46634f;
+  border-radius: 12px;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.gomb a {
+  text-decoration: none;
+  color: white;
+}
+
+.sz-100 {
+  width: 100% !important;
+}
+
+.szoveg-kozep {
+  text-align: center !important;
+}
+.szoveg-balra {
+  text-align: left !important;
+}
+
+.italic {
+  font-style: italic !important;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(199, 224, 209);
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+header .logo {
+  margin-left: 20px;
+  flex: 1;
+}
+
+header img {
+  height: 50px;
+}
+
+.nav-lista {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .nav-lista {
+    font-size: 12px;
+  }
+}
+
+.nav-lista-item {
+  padding: 0px 10px;
+}
+
+.nav-lista-item a {
+  text-decoration: none;
+}
+
+main {
+  margin-top: 100px;
+}
+
+
+
+
+
+.landing-doboz {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.landing-doboz-nagy {
+  margin-top: 150px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-doboz-nagy .landing {
+  min-height: inherit;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .landing-doboz-nagy {
+    margin-bottom: 150px;
+  }
+
+  .landing-doboz-nagy .landing {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .landing-doboz-nagy .landing-texts {
+    width: 50%;
+  }
+}
+
+.landing-end {
+  justify-content: end;
+}
+
+.landing-start {
+  justify-content: start;
+}
+
+.landing {
+  width: 100%;
+  position: relative;
+  padding: 40px;
+  background-color: #b1ceb9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+  flex-direction: column;
+}
+
+.landing-teljes-szellesseg {
+  width: 100% !important;
+}
+
+.landig-darker {
+  background-color: rgb(199, 224, 209 );
+}
+
+.landing-dark {
+  background-color: rgb(74, 95, 81);
+  color: white;
+}
+
+.landing-kicsi {
+  min-height: inherit;
+  width: 70% !important;
+}
+
+.landing-kicsi .landing-texts {
+  text-align: inherit;
+  width: 100%;
+}
+
+.landing-img {
+  position: relative;
+  transform: inherit;
+  width: 70%;
+}
+.landing-img-nagy {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+}
+
+.landing-margin-bottom {
+  margin-bottom: 100px;
+}
+
+.landing-margin-bottom-nagy {
+  margin-bottom: 400px;
+}
+
+@media (min-width: 768px) {
+  .landing {
+    width: 70%;
+  }
+
+  .landing-start .landing-texts {
+    margin-left: -130px;
+  }
+
+  .landing-img {
+    max-width: 350px;
+  }
+
+  .landing-img-left {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .landing-img-right {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateX(50%);
+  }
+
+  .landing-img-right-top {
+    top: -25%;
+  }
+
+  .landing-margin-bottom {
+    margin-bottom: 200px;
+  }
+
+  .landing-img-nagy {
+    left: 0;
+    top: 50%;
+    transform: translate(25%, -50%);
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+.landing-texts {
+  width: 60%;
+  text-align: center;
+  font-style: italic;
+}
+
+.landing-texts h2 {
+  margin-bottom: 15px;
+}
+
+.landing-texts p {
+  margin-bottom: 15px;
+}
+
+.pages {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-doboz {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 20px;
+  width: 60%;
+}
+
+.page-doboz img {
+  margin-bottom: 15px;
+  max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .pages {
+    flex-direction: row;
+  }
+
+  .page-doboz {
+    margin: 0 20px;
+  }
+}
+
+footer {
+  height: 200px;
+  background-color: rgb(199, 224, 209);
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .nav-lista {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  footer .nav-lista {
+    padding: 20px 0px;
+    flex-direction: row;
+  }
+}
+
+
+
+@media (min-width: 576px) {
+  header img {
+    height: 80px;
+  }
+}
+
+/* Aloldalak közös extra stílusai */
+
+.oldal-focim {
+  font-weight: 800;
+  font-style: italic;
+
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 36px;
+  padding-top: 18px;
+}
+
+@media (min-width: 768px) {
+  .oldal-focim {
+    width: calc(60% - 100px);
+    font-size: 32px;
+    margin-left: 20px;
+    text-align: left;
+  }
+}
+
+.kepek {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 72px;
+}
+
+.kepek .kep {
+  max-width: 80%;
+  margin: 20px;
+  max-height: 200px;
+}
+
+@media (min-width: 768px) {
+  .kepek {
+    flex-direction: row;
+    margin: 30px;
+  }
+
+  .kepek .kep {
+    max-height: inherit;
+    max-width: 250px;
+  }
+}
+
+.paragrafus-doboz {
+  width: 100%;
+}
+
+.paragrafus {
+  margin: 40px;
+}
+
+@media (min-width: 768px) {
+  .paragrafus {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
+
+.kepek-kicsi {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kepek-kicsi .kep-kicsi {
+  max-width: 250px;
+  width: 100%;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .kepek-kicsi {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .kepek-kicsi .kep-kicsi {
+    max-width: 300px;
+    width: 50%;
+  }
+}
+
+.szoveg-keppel-doboz {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+.szoveg-keppel-doboz .kep-doboz img {
+  max-width: 250px;
+}
+
+@media (min-width: 768px) {
+  .szoveg-keppel-doboz {
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .szoveg-keppel-doboz .kep-doboz {
+    width: 50%;
+  }
+  .szoveg-keppel-doboz .szoveg-doboz {
+    padding: 0px;
+    width: 50%;
+  }
+  .szoveg-keppel-doboz .kep-doboz img {
+    max-width: 350px;
+  }
+}
+
+.szoveg-keppel-doboz .szoveg-doboz h2 {
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+.szovegek-hatterrel-doboz {
+  font-weight: 300;
+  font-style: italic;
+
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  
+  background-repeat: no-repeat;
+  background-blend-mode: saturation;
+  background-position: center;
+}
+
+.szoveg-elem {
+  width: 100%;
+  padding: 30px;
+}
+
+.szoveg-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.szoveg-elem-jobbra {
+  align-self: flex-end;
+}
+
+.szoveg-elem-balra {
+  align-self: flex-start;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .szoveg-elem {
+    width: 50%;
+  }
+  .szoveg-elem-balra {
+    margin-bottom: 0px;
+  }
+}
+
+.kepek-egymason-doboz {
+  margin-top: 100px;
+  position: relative;
+
+  min-height: 350px;
+  margin-bottom: 100px;
+}
+
+.kepek-egymason-doboz img {
+  max-width: 250px;
+  width: 80%;
+}
+
+.kepek-egymason-nagy {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+}
+
+.kepek-egymason-kicsi {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .kepek-egymason-nagy {
+    transform: translateX(-20%);
+  }
+  .kepek-egymason-kicsi {
+    left: 50%;
+    transform: translateX(-80%);
+  }
+}
+
+.szoveg-vekony {
+  font-weight: 300;
+}
+
+.paragrafus-oldal-vege {
+  font-size: 22px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 200px;
+}
+
+@media (min-width: 768px) {
+  .paragrafus-oldal-vege {
+    font-size: 22px;
+    margin-left: 120px;
+    margin-right: 300px;
+    padding-bottom: 200px;
+  }
+}
